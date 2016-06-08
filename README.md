@@ -5,7 +5,7 @@ Faun is a unique and spacious single page website template developed on top of J
 Here you can find the original [PSD](https://symu.co/freebies/templates-4/faun-psd-template/)
 by [Patryk Wąsik](https://www.behance.net/glashilla)
 
-This project was developed with HTML, Sass, JavaScript, Gulp, and Jekyll.
+This project was developed with HTML5, Sass, JavaScript, Gulp, and Jekyll.
 
 Performance basics are covered: assets are minified into single CSS and JS files, and the images are optimized.
 
