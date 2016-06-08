@@ -1,0 +1,192 @@
+header
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  display: flex
+  width: 1440px
+  max-width: 90%
+  height: 100px
+  align-items: center
+  justify-content: space-between
+  z-index: 10
+
+  #nav-toggle
+    display: flex
+    width: 50px
+    height: 50px
+    align-items: center
+    justify-content: center
+    cursor: pointer
+
+    span,
+    span:before,
+    span:after
+      content: ""
+      position: relative
+      display: block
+      width: 30px
+      height: 2px
+      background-color: $white
+
+    span:before
+      top: -8px
+      right: -6px
+      transition: right .2s ease-in-out
+
+    span:after
+      top: 6px
+      right: -8px
+      width: 24px
+      transition: all .2s ease-in-out
+
+    &:hover
+      span:before,
+      span:after
+        right: 0
+
+      span:after
+        width: 30px
+
+  .logo
+    margin: 0
+
+    a
+      color: $white
+      font-size: 48px
+      font-family: $bebas
+      text-transform: uppercase
+
+  .search
+    transform: scale(1)
+    display: flex
+    width: 50px
+    height: 50px
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    transition: transform .2s ease-in-out
+
+    &:hover
+      transform: scale(1.1)
+
+    i
+      color: $white
+      font-size: 22px
+
+#nav-lockup
+  visibility: hidden
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  opacity: 0
+  background-color: #202020
+  transition: opacity .5s linear, visibility 0s .5s
+  z-index: 10
+
+  &:after
+    @include background(.8)
+    background-image: url('../img/hero.png')
+
+  &.nav-open
+    visibility: visible
+    opacity: 1
+    transition: opacity .5s linear
+
+  .nav-return
+    position: absolute
+    top: 215px
+    left: 50%
+    transform: translateX(-50%)
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 30px
+    height: 30px
+    opacity: 0
+    cursor: pointer
+    transition: opacity .5s linear .7s
+
+    &.nav-open
+      opacity: 1
+
+    &:before,
+    &:after
+      content: ""
+      width: 1px
+      height: 25px
+      background-color: $white
+
+    &:before
+      transform: rotate(45deg)
+
+    &:after
+      transform: rotate(-45deg)
+
+  .nav
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    display: flex
+    height: 50%
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+    margin: 0
+    padding: 0
+    list-style: none
+
+    li
+      opacity: 0
+
+      &.nav-open
+        opacity: 1
+
+      a
+        color: $white
+        font-size: 38px
+        font-family: $bebas
+        text-transform: uppercase
+        opacity: .9
+        transition: color .2s ease-in-out
+
+        &:hover
+          color: $highlight
+
+    li:nth-child(1)
+      transition: opacity .3s ease-in-out 1s
+
+    li:nth-child(2)
+      transition: opacity .3s ease-in-out 1.3s
+
+    li:nth-child(3)
+      transition: opacity .3s ease-in-out 1.6s
+
+    li:nth-child(4)
+      transition: opacity .3s ease-in-out 1.9s
+
+    li:nth-child(5)
+      transition: opacity .3s ease-in-out 2.1s
+
+  @media (max-height: 500px)
+    .nav-return
+      top: 205px
+      left: auto
+      transform: translateX(0)
+      right: 205px
+
+    .nav
+      height: 70%
+
+html,
+body
+
+  &.nav-open
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    overflow: hidden

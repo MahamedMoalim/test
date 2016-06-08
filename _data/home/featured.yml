@@ -1,0 +1,9 @@
+posts:
+
+  - {title: 'Our Newest Video', blurb: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a tincidunt dui, vitae posuere ipsum. Praesent vehicula nunc eget risus vehicula rutrum. Vestibulum pulvinar sapien tellus, sit amet ultrices turpis vestibulum at.', num: 1, thumb: 'thumb-1.jpg'}
+
+  - {title: 'Freedom Tour', blurb: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a tincidunt dui, vitae posuere ipsum. Praesent vehicula nunc eget risus vehicula rutrum. Vestibulum pulvinar sapien tellus, sit amet ultrices turpis vestibulum at. Donec a tincidunt dui, vitae posuere ipsum.', num: 2, thumb: 'thumb-2.jpg'}
+
+  - {title: 'Loud and Proud', blurb: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a tincidunt dui, vitae posuere ipsum. Praesent vehicula nunc eget risus vehicula rutrum. Vestibulum pulvinar sapien tellus.', num: 3, thumb: 'thumb-3.jpg'}
+
+  - {title: 'Old School', blurb: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a tincidunt dui, vitae posuere ipsum. Praesent vehicula nunc eget risus vehicula rutrum. Vestibulum pulvinar sapien tellus, sit amet ultrices turpis vestibulum at. Praesent vehicula nunc eget risus vehicula rutrum.', num: 4, thumb: 'thumb-4.jpg'}

@@ -1,0 +1,6 @@
+nav:
+  - {link: 'Home'}
+  - {link: 'Schedule'}
+  - {link: 'Blog'}
+  - {link: 'About Us'}
+  - {link: 'Contact'}

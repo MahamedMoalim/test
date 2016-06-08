@@ -1,0 +1,62 @@
+#hero
+  position: relative
+  display: flex
+  height: 100vh
+  align-items: center
+  justify-content: center
+
+  &:after
+    @include background(.8)
+    background-image: url('../img/hero.png')
+
+  .claim
+    max-width: 90%
+
+    p
+      margin: 0
+      font-size: 84px
+      font-family: $bebas
+      line-height: 72px
+      text-transform: uppercase
+
+      .thin
+        color: $white
+        font-weight: 100
+        line-height: 126px
+
+      .highlight
+        color: $highlight
+        font-size: 144px
+        font-weight: bold
+        opacity: .6
+
+      .bold
+        color: $white
+        font-weight: bold
+
+    a
+      position: relative
+      top: 75px
+      padding: 12px 48px
+      color: $white
+      font-size: 22px
+      font-family: $bebas
+      text-transform: uppercase
+      border: 2px solid $white
+
+    @media (max-width: 640px), (max-height: 640px)
+      p
+        line-height: 48px
+        font-size: 56px
+
+        .thin
+          line-height: 84px
+
+        .highlight
+          font-size: 96px
+
+    @media (max-height: 500px)
+      padding-top: 60px
+
+      a
+        display: none

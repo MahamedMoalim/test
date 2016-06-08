@@ -1,0 +1,31 @@
+// https://fonts.googleapis.com/css?family=Raleway
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+/*
+http://www.fontfabric.com/bebas-neue/?utm_source=fontsquirrel.com&utm_medium=download_link&utm_campaign=bebas-neue
+*/
+
+@font-face {
+  font-family: 'BebasNeue';
+  src:url('fonts/bebasneue-thin.ttf') format('truetype'),
+    url('fonts/bebasneue-thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue';
+  src:url('fonts/bebasneue-regular.ttf') format('truetype'),
+    url('fonts/bebasneue-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue';
+  src:url('fonts/bebasneue-bold.ttf') format('truetype'),
+    url('fonts/bebasneue-bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}

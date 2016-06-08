@@ -1,0 +1,122 @@
+#about
+  position: relative
+  padding: 150px 0
+  background-color: $white
+  overflow: hidden
+
+  .wrapper
+    position: relative
+    display: flex
+    width: 1440px
+    max-width: 90%
+    height: 100%
+    margin: 0 auto
+
+  .about-us
+    display: flex
+    width: 50%
+    flex-direction: column
+    justify-content: center
+    z-index: 10
+
+    h2
+      margin: 0 0 10px 0
+      color: $black
+      font-size: 48px
+      font-family: $bebas
+      font-weight: bold
+      text-transform: uppercase
+
+    p
+      width: 90%
+      color: $muted
+      font-size: 18px
+
+    .tour
+      margin-top: 50px
+
+      a
+        padding: 12px 32px
+        color: $dark-gray
+        font-size: 18px
+        font-family: $bebas
+        text-transform: uppercase
+        border: 2px solid $dark-gray
+
+  .thumb-lockup
+    display: flex
+    width: 50%
+    align-items: center
+    z-index: 10
+
+    .midground
+      width: 100%
+      box-shadow: 0 0 95px 0 rgba(0,0,0,.35)
+
+  @media (max-width: 640px)
+    .about-us
+      width: 100%
+      text-align: center
+
+      p
+        margin: 0 auto
+
+    .thumb-lockup
+      display: none
+
+  .foreground
+    position: absolute
+    bottom: -125px
+    right: -35px
+    color: $highlight
+    font-size: 124px
+    font-family: $bebas
+    font-weight: bold
+    text-transform: uppercase
+    z-index: 11
+
+  .background-right,
+  .background-left
+    position: absolute
+    color: $muted
+    font-family: $bebas
+    font-weight: bold
+    text-transform: uppercase
+    opacity: 0.1
+
+  .background-left
+    top: -150px
+    left: -325px
+    font-size: 275px
+
+  .background-right
+    top: -200px
+    right: -400px
+    font-size: 375px
+
+  @media (max-width: 980px)
+    .foreground
+      font-size: 94px
+
+    .background-right
+      display: none
+
+  @media (max-width: 767px)
+    .foreground
+      display: none
+
+  @media (min-width: 1025px)
+    .thumb-lockup
+
+      .midground
+        position: relative
+        top: 75px
+
+    .foreground
+      bottom: -450px
+
+    .background-left
+      top: -115px
+
+    .background-right
+      top: -165px

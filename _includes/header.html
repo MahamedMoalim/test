@@ -1,0 +1,17 @@
+<header>
+  <div id="nav-toggle">
+    <span></span>
+  </div>
+  <h1 class="logo"><a href="#">{{site.title}}</a></h1>
+  <div class="search">
+    <i class="icon-search"></i>
+  </div>
+</header>
+<div id="nav-lockup">
+  <span class="nav-return"></span>
+  <ul class="nav">
+    {% for links in site.data.header.nav %}
+    <li><a href="#">{{links.link}}</a></li>
+    {% endfor %}
+  </ul>
+</div>

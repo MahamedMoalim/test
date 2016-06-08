@@ -1,0 +1,13 @@
+# Site settings
+title: Faun
+description: 'Music is a safe kind of high.'
+permalink: pretty
+
+# exclude the following files from jekyll processing
+exclude: ['package.json', 'gulpfile.js', 'node_modules', 'README.md']
+
+# prevent jekyll rebuilds from interfering with gulp
+keep_files: ['assets']
+
+# Build settings
+markdown: kramdown

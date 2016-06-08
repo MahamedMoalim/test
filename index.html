@@ -1,0 +1,69 @@
+---
+layout: default
+---
+
+<section id="hero">
+  <div class="claim">
+    <p><span class="thin">{{site.data.home.hero.claim_thin}}</span>
+    <br><span class="highlight">{{site.data.home.hero.claim_highlight}}</span>
+    <br><span class="bold">{{site.data.home.hero.claim_bold}}</span></p>
+    <a href="#about">{{site.data.home.hero.link}}</a>
+  </div>
+</section>
+<section id="about">
+  <div class="wrapper">
+    <div class="about-us">
+      <h2>{{site.data.home.about.title}}</h2>
+      <p>{{site.data.home.about.blurb}}</p>
+      <div class="tour">
+        <a href="#">{{site.data.home.about.link}}</a>
+      </div>
+    </div>
+    <div class="thumb-lockup">
+      <img class="midground" src="assets/img/{{site.data.home.about.image}}" alt="Concert">
+    </div>
+    <p class="foreground">{{site.data.home.about.foreground}}</p>
+    <p class="background-left">{{site.data.home.about.background_left}}</p>
+    <p class="background-right">{{site.data.home.about.background_right}}</p>
+  </div>
+</section>
+<section id="featured">
+  <div class="banner-lockup banner-0">
+    <div class="wrapper">
+      <div class="play">
+        <i class="icon-play"></i>
+        <span></span>
+      </div>
+      <div class="posts">
+        {% for post in site.data.home.featured.posts %}
+        <div class="blurb {% if forloop.first %}active{% endif %}">
+          <h2>{{post.title}}</h2>
+          <p>{{post.blurb}}</p>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="num-nav">
+        {% for post in site.data.home.featured.posts %}
+        <p class="{% if forloop.first %}active{% endif %}">{{post.num}}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div id="loader">
+    <span></span>
+  </div>
+  <div class="thumb-nav">
+    {% for thumbs in site.data.home.featured.posts %}
+    <div class="thumb {% if forloop.first %}active{% endif %}">
+      <img src="assets/img/{{thumbs.thumb}}">
+    </div>
+    {% endfor %}
+  </div>
+</section>
+<section id="contact">
+  <div class="wrapper">
+    <h2>{{site.data.home.contact.title}}</h2>
+    <p>{{site.data.home.contact.blurb}}</p>
+    <a href="#">{{site.data.home.contact.link}}</a>
+  </div>
+</section>

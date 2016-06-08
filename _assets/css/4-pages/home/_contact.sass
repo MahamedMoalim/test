@@ -1,0 +1,46 @@
+#contact
+  position: relative
+  padding: 150px 0
+
+  &:after
+    @include background(.4)
+    background-image: url('../img/contact.png')
+
+  .wrapper
+    max-width: 90%
+    margin: 0 auto
+    text-align: center
+    transition: all .8s ease-in-out
+
+    &.visible
+      transform: translateY(0px)
+      opacity: 1
+
+    @media (min-width: 1025px)
+      transform: translateY(30px)
+      opacity: 0
+
+    h2
+      margin: 0 0 10px 0
+      color: $white
+      font-size: 64px
+      font-family: $bebas
+      font-weight: bold
+      text-transform: uppercase
+
+      @media (max-width: 640px)
+        font-size: 48px
+
+    p
+      max-width: 600px
+      margin: 0 auto 50px auto
+      color: $white
+      font-size: 16px
+
+    a
+      padding: 12px 48px
+      color: $white
+      font-size: 22px
+      font-family: $bebas
+      text-transform: uppercase
+      border: 2px solid $white
