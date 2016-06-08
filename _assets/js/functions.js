@@ -18,7 +18,7 @@ function nav() {
 
   $('#nav-toggle').click(function(){
 
-    $('#nav-lockup, #nav-lockup .nav li, #nav-lockup .nav-return, html, body').addClass('nav-open');
+    $('#nav-lockup, #nav-lockup .nav li, #nav-lockup .return, html, body').addClass('nav-open');
 
     setTimeout(function(){
 
@@ -33,9 +33,9 @@ function nav() {
 
   });
 
-  $('#nav-lockup .nav-return').click(function(){
+  $('#nav-lockup .return').click(function(){
 
-    $('#nav-lockup, #nav-lockup .nav li, #nav-lockup .nav-return').removeClass('nav-open');
+    $('#nav-lockup, #nav-lockup .nav li, #nav-lockup .return').removeClass('nav-open');
 
     setTimeout(function(){
 
