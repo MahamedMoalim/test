@@ -11,25 +11,19 @@
   .banner-3
 
     &.active
-      animation: fade-in .5s ease-in-out
-
-  .banner-0:after,
-  .banner-1:after,
-  .banner-2:after,
-  .banner-3:after
-    @include background(.4)
+      animation: fade .5s linear
 
   .banner-0:after
-    background-image: url('../img/featured-1.jpg')
+    @include background('featured-1', 'jpg', .4)
 
   .banner-1:after
-    background-image: url('../img/featured-2.jpg')
+    @include background('featured-2', 'jpg', .4)
 
   .banner-2:after
-    background-image: url('../img/featured-3.jpg')
+    @include background('featured-3', 'jpg', .4)
 
   .banner-3:after
-    background-image: url('../img/featured-4.jpg')
+    @include background('featured-4', 'jpg', .4)
 
   .wrapper
     position: relative
@@ -94,7 +88,7 @@
 
     &.active
       display: block
-      animation: fade-in .5s ease-in-out
+      animation: fade .5s linear
 
     h2
       margin: 0
@@ -151,7 +145,7 @@
 
     .num-nav
       display: flex
-      width: 250px
+      width: 300px
       order: 3
       justify-content: space-around
 

@@ -1,4 +1,8 @@
-@mixin background($opacity)
+// mixin used on after pseudo elements
+// in order to apply the opacity property
+// to a background image
+
+@mixin background($file, $type, $opacity)
   content: ""
   position: absolute
   top: 0
@@ -6,6 +10,7 @@
   right: 0
   bottom: 0
   background:
+    image: url('../img/'+ $file +'.'+ $type)
     position: center
     size: cover
     repeat: no-repeat

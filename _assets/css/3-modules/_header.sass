@@ -86,8 +86,7 @@ header
   z-index: 10
 
   &:after
-    @include background(.8)
-    background-image: url('../img/hero.png')
+    @include background('hero', 'png', .8)
 
   &.nav-open
     visibility: visible
@@ -100,10 +99,10 @@ header
     left: 50%
     transform: translateX(-50%)
     display: flex
-    align-items: center
-    justify-content: center
     width: 30px
     height: 30px
+    align-items: center
+    justify-content: center
     opacity: 0
     cursor: pointer
     transition: opacity .5s linear .7s
