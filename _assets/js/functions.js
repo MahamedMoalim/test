@@ -139,6 +139,7 @@ function carousel() {
 
 }
 
+// animate loadbar
 function loader() {
 
   $('#featured #loader span').animate({width: '100%'}, 1500);
@@ -146,6 +147,7 @@ function loader() {
 
 }
 
+// update nav positions
 function navState(param) {
 
   var active = $('.num-nav').find('.active'),
@@ -165,6 +167,7 @@ function navState(param) {
 
 }
 
+// update post info and background image
 function swap(current, index) {
 
   $('#featured .banner-lockup').removeClass('active');
@@ -180,6 +183,7 @@ function swap(current, index) {
 
 }
 
+// reset the loadbar
 function reset() {
 
   $('#featured #loader span').css({'width' : '0%', 'opacity' : '1'});
