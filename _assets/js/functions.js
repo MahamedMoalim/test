@@ -85,7 +85,7 @@ function parallax() {
           vertical = - (wScroll / 10);
 
       $('#hero .claim').css({
-        'opacity' : ''+ opacity +'',
+        'opacity' : opacity,
         'transform' : 'translateY('+ vertical +'px)'
       });
 
