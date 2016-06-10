@@ -20,17 +20,6 @@ function nav() {
 
     $('#nav-lockup, #nav-lockup .nav li, #nav-lockup .return, html, body').addClass('nav-open');
 
-    setTimeout(function(){
-
-      $('#nav-lockup').animate({
-        top: '-175px',
-        left: '-175px',
-        right: '-175px',
-        bottom: '-175px'
-      }, 200);
-
-    }, 500);
-
   });
 
   $('#nav-lockup .return').click(function(){
@@ -40,13 +29,6 @@ function nav() {
     setTimeout(function(){
 
       $('html, body').removeClass('nav-open');
-
-      $('#nav-lockup').css({
-        top: '0',
-        left: '0',
-        right: '0',
-        bottom: '0'
-      });
 
     }, 500);
 
