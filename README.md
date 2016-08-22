@@ -1,11 +1,11 @@
 # [Faun: Jekyll website template](http://buckymaler.com/featured-work/faun)
 
-Faun is a unique and spacious single page website template developed on top of Jekyll, and serves as the perfect starting point to get you going on your next website project.
+Faun is a unique and spacious single page website template developed on top of Jekyll, and serves as the perfect online presence for entertainers of all variety.
 
 Here you can find the original [PSD](https://symu.co/freebies/templates-4/faun-psd-template/)
 by [Patryk Wąsik](https://www.behance.net/glashilla)
 
-This project was developed with HTML5, Sass, JavaScript, Gulp, and Jekyll.
+This project was developed with HTML5, Sass, jQuery, Gulp, and Jekyll.
 
 Performance basics are covered: assets are minified into single CSS and JS files, and the images are optimized.
 
@@ -29,3 +29,4 @@ Performance basics are covered: assets are minified into single CSS and JS files
 ## Misc:
 
 * Follow Bucky: [Twitter](https://twitter.com/BuckyMaler), [GitHub](https://github.com/BuckyMaler)
+* Follow Patryk: [Bēhance](https://www.behance.net/glashilla), [Dribbble](https://dribbble.com/glash)
